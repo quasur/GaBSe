@@ -31,3 +31,5 @@ plt.plot(clusterSource[0,:],clusterSource[1,:],'r.')
 plt.plot(lowIntensity[0,:],lowIntensity[1,:],'r.')
 plt.show()
 
+#TODO Add an export to txt so the sample generated here can be used in other code
+#Otherwise can just import this in another file.
