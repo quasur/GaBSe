@@ -4,9 +4,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #generating a random population with a region of high density
-np.random.seed(1234)
+seed=1234
+np.random.seed(seed)
 
-hic = 1500 #high intensity count
+hic = 2000 #high intensity count
 highIntensity = np.array([np.random.rand(hic),np.random.rand(hic)])
 
 #circle of r = 0.2 centred at 0.4,0.4 = =>
@@ -27,14 +28,12 @@ lic = 500-np.size(clusterSource[0,:])  #low intensity count, using 500 to keep a
 lowIntensity = np.array([np.random.rand(lic),np.random.rand(lic)]) #generate a random set of points
 
 #plot sources, change the "r." to "b." if you want to see the 2 types clearer
+plt.figure(figsize=(4,4))
 plt.plot(clusterSource[0,:],clusterSource[1,:],'r.')
 plt.plot(lowIntensity[0,:],lowIntensity[1,:],'r.')
 plt.show()
 
-#TODO Add an export to txt so the sample generated here can be used in other code
-#Otherwise can just import this in another file.
+dataset = np.hstack((clusterSource,lowIntensity))
+with open("simpleset.npy","wb") as f:
+    np.save(f,dataset)
 
-
-
-#sdplkjfslkjdfh;lsdjfhlsdjhslkjfh
-print("woo")
