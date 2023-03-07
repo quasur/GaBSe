@@ -47,4 +47,3 @@ for cellCount in rowcounts:
     plt.imshow(clusterBool,origin="lower",cmap="Greys")
     plt.show()
 
-
