@@ -1,4 +1,5 @@
-#%% Counts in cells algorithm for finding high regions of surface density
+#%% Generates samples to test counts in cells on
+#https://github.com/quasur/GaBSe
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -37,7 +38,8 @@ plt.plot(sourceA[0,:],sourceA[1,:],'y.')
 plt.plot(sourceB[0,:],sourceB[1,:],'g.')
 plt.plot(sourceC[0,:],sourceC[1,:],'b.')
 plt.plot(sourceD[0,:],sourceD[1,:],color="purple",linestyle="none",marker=".")
-plt.show()
+plt.title("Generated Testing Samples")
+plt.savefig("graphs/Fake Samples.png",format="png")
 
 
 
