@@ -3,6 +3,7 @@ Galaxy Bundle Searcher. Looks for galaxy clusers using coumts in cells.
 Designed to use .fits data from DES SVA1 GOLD data release
 
 Files and purposes:
+
 CLUSTERS REPORT.pdf - The report written about the results of this project.
 
 colourGraphing.py - plots colour magnitude diagrams of data exported from datasetToNumpyConverter.py
